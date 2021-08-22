@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Deshion</string>
+    <string name="sex_string" translatable="false">性别</string>
+    <string name="city_string" translatable="false">城市</string>
+    <string name="province_prompt" translatable="false">广东省</string>
+    <string name="city_prompt" translatable="false">广州市</string>
+    <string name="invite_text">邀请码</string>
+    <string name="previous">上一步</string>
+    <string name="invite_hint">无邀请码可不填</string>
+    <string name="skip">跳过</string>
+    <string name="choose_tag">选择你感兴趣的标签</string>
+</resources>

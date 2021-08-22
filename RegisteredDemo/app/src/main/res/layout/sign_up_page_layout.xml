@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sign_sex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/sex_string"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sign_male_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/male"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_sex_text"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <ImageView
+        android:id="@+id/sign_female_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_sex_text"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <TextView
+        android:id="@+id/sign_city_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/city_string"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_male_icon" />
+
+    <TextView
+        android:id="@+id/sign_province_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/province_prompt"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_city_text"/>
+
+    <ImageView
+        android:id="@+id/sign_province_push_down"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="13dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/down"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_province_choose"
+        app:layout_constraintHeight_percent="0.058"
+        app:layout_constraintStart_toEndOf="@+id/sign_province_choose"
+        app:layout_constraintTop_toTopOf="@+id/sign_province_choose"
+        app:layout_constraintWidth_percent="0.106" />
+
+
+    <TextView
+        android:id="@+id/sign_city_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/city_prompt"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_province_choose" />
+
+    <ImageView
+        android:id="@+id/sign_city_push_down"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="13dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/down"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_city_choose"
+        app:layout_constraintHeight_percent="0.058"
+        app:layout_constraintStart_toEndOf="@+id/sign_city_choose"
+        app:layout_constraintTop_toTopOf="@+id/sign_city_choose"
+        app:layout_constraintWidth_percent="0.106" />
+
+    <ImageView
+        android:id="@+id/sign_next"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_city_choose"
+        app:layout_constraintWidth_percent="0.22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
