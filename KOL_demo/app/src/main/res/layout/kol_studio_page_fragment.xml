@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kol_studio_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/kol_tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabIndicatorColor="#6040FF"
+        app:tabTextColor="#6040FF"
+        app:tabSelectedTextColor="#FF69B4"
+        app:tabMode="fixed"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicator="@drawable/indicator"
+        app:layout_constraintHeight_percent="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4362" />
+
+    <ImageView
+        android:id="@+id/kol_search_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_filed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.077"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5123" />
+
+    <ImageView
+        android:id="@+id/kol_search_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/search"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kol_search_bg"
+        app:layout_constraintHeight_percent="0.042"
+        app:layout_constraintStart_toEndOf="@+id/kol_tab_layout"
+        app:layout_constraintTop_toTopOf="@+id/kol_search_bg"
+        app:layout_constraintWidth_percent="0.071" />
+
+    <EditText
+        android:id="@+id/kol_search_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/search_hint"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kol_search_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kol_search_icon"
+        app:layout_constraintTop_toTopOf="@+id/kol_search_bg" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/kol_contain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kol_tab_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DADADA"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.deshion.kol_demo.utils.ImageViewPlus
+        android:id="@+id/link_pic"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1409" />
+
+    <TextView
+        android:id="@+id/link_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLength="10"
+        android:text="@string/unset"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/link_pic"
+        app:layout_constraintStart_toEndOf="@+id/link_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/link_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="2"
+        android:text="@string/unset"
+        android:textColor="#8A8A8A"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/link_pic"
+        app:layout_constraintStart_toEndOf="@+id/link_pic"
+        app:layout_constraintTop_toBottomOf="@+id/link_title"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/link_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="￥000"
+        android:textColor="#f46877"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/link_title"
+        app:layout_constraintTop_toBottomOf="@+id/link_description" />
+
+    <Button
+        android:id="@+id/link_detail_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

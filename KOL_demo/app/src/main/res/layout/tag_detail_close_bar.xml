@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.deshion.kol_demo.utils.ImageViewPlus
+        android:id="@+id/tag_close_icon"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1342" />
+
+    <TextView
+        android:id="@+id/tag_close_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="@string/unset"
+        android:textColor="#4b4b4b"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tag_close_icon"
+        app:layout_constraintStart_toEndOf="@+id/tag_close_icon"
+        app:layout_constraintTop_toTopOf="@+id/tag_close_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tag_close_kol_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:singleLine="true"
+        android:text="@string/kol_num"
+        android:textColor="#8b8b8b"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tag_close_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tag_close_name" />
+
+    <TextView
+        android:id="@+id/tag_close_post_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:singleLine="true"
+        android:text="@string/post_num"
+        android:textColor="#8b8b8b"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tag_close_kol_num"
+        app:layout_constraintStart_toEndOf="@+id/tag_close_kol_num"
+        app:layout_constraintTop_toTopOf="@+id/tag_close_kol_num" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">KOL_demo</string>
+    <string name="deshion">搭讯</string>
+    <string name="studio">工作室</string>
+    <string name="shopping">购物</string>
+    <string name="my">我</string>
+    <string name="unset">未知</string>
+    <string name="search_hint">搜索您感兴趣的物品吧~</string>
+    <string name="default_value">0</string>
+    <string name="kol_num">博主数: </string>
+    <string name="fans_num">粉丝数: </string>
+    <string name="post_num">帖子数: </string>
+    <string name="follow">关注</string>
+    <string name="all">全部</string>
+    <string name="followed">已关注</string>
+    <string name="donate">打赏</string>
+    <string name="search">搜索</string>
+    <string name="most_search">热门搜索</string>
+</resources>

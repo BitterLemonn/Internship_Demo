@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/search_search_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_filed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.077"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8123" />
+
+    <ImageView
+        android:id="@+id/search_search_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/search_search_bg"
+        app:layout_constraintHeight_percent="0.042"
+        app:layout_constraintStart_toStartOf="@+id/search_search_bg"
+        app:layout_constraintTop_toTopOf="@+id/search_search_bg"
+        app:layout_constraintWidth_percent="0.071" />
+
+    <EditText
+        android:id="@+id/search_search_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionSearch"
+        android:maxWidth="270dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_search_icon"
+        app:layout_constraintStart_toEndOf="@+id/search_search_icon"
+        app:layout_constraintTop_toTopOf="@+id/search_search_icon"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/search_search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/search"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_search_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_search_bg"
+        app:layout_constraintTop_toTopOf="@+id/search_search_bg" />
+
+    <View
+        android:id="@+id/search_search_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="#8b8b8b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_search_bg" />
+
+    <TextView
+        android:id="@+id/search_hash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/most_search"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_search_line" />
+
+    <com.deshion.kol_demo.utils.LinearLayoutWarp
+        android:id="@+id/search_search_hash_tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:grivate="left"
+        app:horizontal_Space="10dp"
+        app:isFull="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_hash_text"
+        app:vertical_Space="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

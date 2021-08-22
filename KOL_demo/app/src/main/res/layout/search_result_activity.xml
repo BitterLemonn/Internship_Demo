@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/search_result_search_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_filed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.0464"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9042" />
+
+    <ImageView
+        android:id="@+id/search_result_search_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/search_result_search_bg"
+        app:layout_constraintHeight_percent="0.0423"
+        app:layout_constraintStart_toStartOf="@+id/search_result_search_bg"
+        app:layout_constraintTop_toTopOf="@+id/search_result_search_bg"
+        app:layout_constraintWidth_percent="0.0723" />
+
+    <EditText
+        android:id="@+id/search_result_search_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:layout_marginStart="16dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="@string/search_hint"
+        android:textSize="16sp"
+        android:maxLength="20"
+        app:layout_constraintBottom_toBottomOf="@+id/search_result_search_bg"
+        app:layout_constraintStart_toEndOf="@+id/search_result_search_icon"
+        app:layout_constraintTop_toTopOf="@+id/search_result_search_bg" />
+
+    <ImageView
+        android:id="@+id/search_result_search_del"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:padding="7dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_del"
+        app:layout_constraintBottom_toBottomOf="@+id/search_result_search_bg"
+        app:layout_constraintEnd_toEndOf="@+id/search_result_search_bg"
+        app:layout_constraintHeight_percent="0.0423"
+        app:layout_constraintTop_toTopOf="@+id/search_result_search_bg"
+        app:layout_constraintWidth_percent="0.0723" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_kol_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_result_search_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
